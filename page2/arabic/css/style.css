@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+}
+
+/* Body and Section Styling */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: slideInUp 1s ease-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007BFF;
+  animation: fadeInDown 1s ease-out;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 1.5s ease-out;
+}
+
+td {
+  display: flex;
+  flex-direction: column; /* جعل المحتوى في الأعمدة يظهر عمودياً */
+  align-items: flex-start; /* محاذاة الإجابات إلى اليمين */
+  padding: 10px 0;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* إضافة مسافة بين السؤال والإجابة */
+  animation: fadeIn 2s ease-out;
+}
+
+/* Input and Textarea Styling */
+input[type="text"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+div {
+  margin-bottom: 10px; /* إضافة مسافة بين كل خيار */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 2s ease-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Placeholder Text */
+::placeholder {
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  td > div {
+    margin-bottom: 15px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

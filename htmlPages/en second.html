@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Diseases Survey</title>
+  <link rel="stylesheet" href="../page2/english/css/style.css">
+</head>
+<body>
+  <section>
+    <h2>Patient Information</h2>
+    <form>
+      <table>
+        <!-- Additional Questions -->
+        <tr>
+          <td><label for="symptoms">What were the first symptoms you experienced?</label></td>
+          <td><textarea id="symptoms" name="symptoms" rows="3" placeholder="Share your symptoms"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>Have you had any recent tests related to your condition?</label></td>
+          <td>
+            <div>
+              <input type="radio" id="tests_yes" name="recent_tests" value="yes">
+              <label for="tests_yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="tests_no" name="recent_tests" value="no">
+              <label for="tests_no">No</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="upload_tests">If yes, which tests did you perform?</label></td>
+          <td>
+            <input type="file" id="upload_tests" name="tests_files" accept=".pdf,.doc,.docx,.jpg,.png,.mp4,.mp3" multiple>
+            <p>You can upload up to 5 files, max size 100MB per file.</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label>What support do you need?</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="financial_support" name="needs" value="financial_support">
+              <label for="financial_support">Financial Support</label>
+            </div>
+            <div>
+              <input type="checkbox" id="more_info" name="needs" value="more_info">
+              <label for="more_info">More information about the disease</label>
+            </div>
+            <div>
+              <input type="checkbox" id="research" name="needs" value="research">
+              <label for="research">Quick research and trials</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Would you like to join a community for rare disease support?</label></td>
+          <td>
+            <div>
+              <input type="radio" id="join_yes" name="join_community" value="yes">
+              <label for="join_yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="join_no" name="join_community" value="no">
+              <label for="join_no">No</label>
+            </div>
+            <div>
+              <input type="radio" id="join_maybe" name="join_community" value="maybe">
+              <label for="join_maybe">Maybe, I need more information</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lesson">What is the most important lesson you learned from your journey with the disease?</label></td>
+          <td><textarea id="lesson" name="lesson" rows="3" placeholder="Share your experience"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="challenges">What were the biggest challenges you faced after your diagnosis?</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="doctors_access" name="challenges" value="doctors_access">
+              <label for="doctors_access">Difficulty accessing doctors</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lack_info" name="challenges" value="lack_info">
+              <label for="lack_info">Lack of information about the disease</label>
+            </div>
+            <div>
+              <input type="checkbox" id="high_cost" name="challenges" value="high_cost">
+              <label for="high_cost">High treatment costs</label>
+            </div>
+            <div>
+              <input type="checkbox" id="psych_support" name="challenges" value="psych_support">
+              <label for="psych_support">Psychological and social support</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>What types of treatments have you tried?</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="medication" name="treatments" value="medication">
+              <label for="medication">Medication</label>
+            </div>
+            <div>
+              <input type="checkbox" id="physical_therapy" name="treatments" value="physical_therapy">
+              <label for="physical_therapy">Physical therapy</label>
+            </div>
+            <div>
+              <input type="checkbox" id="surgery" name="treatments" value="surgery">
+              <label for="surgery">Surgery</label>
+            </div>
+            <div>
+              <input type="checkbox" id="alternative" name="treatments" value="alternative">
+              <label for="alternative">Alternative treatments</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Did you receive adequate support from doctors and specialists?</label></td>
+          <td>
+            <div>
+              <input type="radio" id="support_yes" name="doctor_support" value="yes">
+              <label for="support_yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="support_somewhat" name="doctor_support" value="somewhat">
+              <label for="support_somewhat">Somewhat</label>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <button type="submit">
+        Submit</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDA</title>
+    <link rel="stylesheet" href="../page1/english/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <form>
+        <h2>For people with rare diseases</h2>
+        <table>
+          <tr>
+            <td><label for="date">Survey Date:</label></td>
+            <td>
+              <input type="date" id="date" name="date" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="firstName">Name:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="age"
+                name="age"
+                placeholder="Enter your Age"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">E-Mail:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your Password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(845)555-1212"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="city">City:</label></td>
+            <td>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Disease Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="disease"
+                name="disease"
+                placeholder="the disease you have"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Is the disease inherited?</label></td>
+            <td>
+              <div>
+                <input type="radio" id="Yes" name="disease" value="yes" />
+                <label for="Yes" style="display: inline-block">Yes</label>
+              </div>
+              <div>
+                <input type="radio" id="No" name="disease" value="no" />
+                <label for="No" style="display: inline-block">No</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Description">Disease Description:</label>
+            </td>
+            <td>
+              <textarea
+                id="Description"
+                name="Description"
+                rows="3"
+                placeholder="explain your Disease"
+                required
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <button type="submit">
+          <a href="../htmlPages/en second.html" target="_blank">Submit</a>
+        </button>
+      </form>
+    </section>
+    <script src="../page1/english/js/main.js"></script>
+  </body>
+</html>
