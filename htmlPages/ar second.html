@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استبيان الأمراض النادرة</title>
+  <link rel="stylesheet" href="../page2/arabic/css/style.css">
+</head>
+<body>
+  <section>
+    <h2>بيانات المريض</h2>
+    <form>
+      <table>
+    
+        <tr>
+          <td><label for="symptoms">ما هي الأعراض الأولى التي شعرت بها؟</label></td>
+          <td><textarea id="symptoms" name="symptoms" rows="3" placeholder="شارك الأعراض"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>هل قمت بإجراء أي تحاليل حديثة ذات صلة بمرضك؟</label></td>
+          <td>
+            <div>
+              <input type="radio" id="tests_yes" name="recent_tests" value="yes">
+              <label for="tests_yes">نعم</label>
+            </div>
+            <div>
+              <input type="radio" id="tests_no" name="recent_tests" value="no">
+              <label for="tests_no">لا</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="upload_tests">إذا كانت الإجابة نعم، ما هي التحاليل التي قمت بها؟</label></td>
+          <td>
+            <input type="file" id="upload_tests" name="tests_files" accept=".pdf,.doc,.docx,.jpg,.png,.mp4,.mp3" multiple>
+            <p>يمكنك تحميل ما يصل إلى 5 ملفات، الحد الأقصى 100 ميجا لكل ملف.</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label>ما الذي تود أن يتوفر لك؟</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="financial_support" name="needs" value="financial_support">
+              <label for="financial_support">دعم مالي</label>
+            </div>
+            <div>
+              <input type="checkbox" id="more_info" name="needs" value="more_info">
+              <label for="more_info">مزيد من المعلومات حول المرض</label>
+            </div>
+            <div>
+              <input type="checkbox" id="research" name="needs" value="research">
+              <label for="research">أبحاث وتجارب سريعة</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>هل ترغب في الانضمام إلى مجتمع يهدف لمساعدة المصابين بالأمراض النادرة؟</label></td>
+          <td>
+            <div>
+              <input type="radio" id="join_yes" name="join_community" value="yes">
+              <label for="join_yes">نعم</label>
+            </div>
+            <div>
+              <input type="radio" id="join_no" name="join_community" value="no">
+              <label for="join_no">لا</label>
+            </div>
+            <div>
+              <input type="radio" id="join_maybe" name="join_community" value="maybe">
+              <label for="join_maybe">ربما أحتاج لمزيد من المعلومات</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lesson">ما هو أكبر درس تعلمته من رحلتك مع المرض؟</label></td>
+          <td><textarea id="lesson" name="lesson" rows="3" placeholder="شارك تجربتك"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="challenges">ما هي أكبر التحديات التي واجهتها بعد التشخيص؟</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="doctors_access" name="challenges" value="doctors_access">
+              <label for="doctors_access">صعوبة الوصول إلى الأطباء</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lack_info" name="challenges" value="lack_info">
+              <label for="lack_info">نقص المعلومات حول المرض</label>
+            </div>
+            <div>
+              <input type="checkbox" id="high_cost" name="challenges" value="high_cost">
+              <label for="high_cost">التكاليف الباهظة للعلاج</label>
+            </div>
+            <div>
+              <input type="checkbox" id="psych_support" name="challenges" value="psych_support">
+              <label for="psych_support">الدعم النفسي والاجتماعي</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>ما نوع العلاجات التي جربتها؟</label></td>
+          <td>
+            <div>
+              <input type="checkbox" id="medication" name="treatments" value="medication">
+              <label for="medication">الدوائية</label>
+            </div>
+            <div>
+              <input type="checkbox" id="physical_therapy" name="treatments" value="physical_therapy">
+              <label for="physical_therapy">العلاج الفيزيائي</label>
+            </div>
+            <div>
+              <input type="checkbox" id="surgery" name="treatments" value="surgery">
+              <label for="surgery">الجراحة</label>
+            </div>
+            <div>
+              <input type="checkbox" id="alternative" name="treatments" value="alternative">
+              <label for="alternative">العلاجات البديلة</label>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td><label>هل تلقيت دعمًا كافيًا من الأطباء والمختصين؟</label></td>
+          <td>
+            <div>
+              <input type="radio" id="support_yes" name="doctor_support" value="yes">
+              <label for="support_yes">نعم</label>
+            </div>
+            <div>
+              <input type="radio" id="support_somewhat" name="doctor_support" value="somewhat">
+              <label for="support_somewhat">إلى حد ما</label>
+            </div>
+          </td>
+        </tr>
+      
+        
+      </table>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDA</title>
+    <link rel="stylesheet" href="../page1/arabic/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <form>
+        <h2>لأشخاص يعانون من أمراض نادرة</h2>
+        <table>
+          <tr>
+            <td><label for="date">تاريخ الاستبيان:</label></td>
+            <td>
+              <input type="date" id="date" name="date" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="name">الاسم:</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="أدخل اسمك"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">العمر:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="age"
+                name="age"
+                placeholder="أدخل عمرك"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">البريد الإلكتروني:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="البريد الإلكتروني"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">كلمة المرور:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="أدخل كلمة المرور"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone">رقم الهاتف:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(845)555-1212"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="city">المدينة:</label></td>
+            <td>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="المدينة"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">العنوان:</label></td>
+            <td>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="العنوان"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="disease">اسم المرض:</label></td>
+            <td>
+              <input
+                type="text"
+                id="disease"
+                name="disease"
+                placeholder="المرض الذي تعاني منه"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>هل المرض موروث؟</label></td>
+            <td>
+              <div>
+                <input type="radio" id="Yes" name="disease" value="yes" />
+                <label for="Yes" style="display: inline-block">نعم</label>
+              </div>
+              <div>
+                <input type="radio" id="No" name="disease" value="no" />
+                <label for="No" style="display: inline-block">لا</label>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="Description">وصف المرض:</label>
+            </td>
+            <td>
+              <textarea
+                id="Description"
+                name="Description"
+                rows="3"
+                placeholder="اشرح مرضك"
+                required
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <button type="submit">
+          <a href="./ar second.html" target="_blank">إرسال</a>
+        </button>
+      </form>
+    </section>
+  
+  </body>
+</html>
